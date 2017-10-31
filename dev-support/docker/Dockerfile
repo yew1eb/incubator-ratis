@@ -38,19 +38,13 @@ RUN apt-get -q update && apt-get -q install --no-install-recommends -y \
     git
 
 #######
-# Oracle Java
+# OpenJDK Java
 #######
 
 RUN echo "dot_style = mega" > "/root/.wgetrc"
 RUN echo "quiet = on" >> "/root/.wgetrc"
 
-RUN apt-get -q install --no-install-recommends -y software-properties-common
-RUN add-apt-repository -y ppa:webupd8team/java
-RUN apt-get -q update
-
-# Auto-accept the Oracle JDK license
-RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-RUN apt-get -q install --no-install-recommends -y oracle-java8-installer
+RUN apt-get -q install -y openjdk-8-jdk
 
 ######
 # Install protobuf compiler 3.1
