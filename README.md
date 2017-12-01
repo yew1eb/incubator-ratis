@@ -12,14 +12,22 @@
  limitations under the License. See accompanying LICENSE file.
 -->
 
+# Apache Ratis web page
 
+This is the source code of the website of Apache Ratis.
 
+To render it you need hugo static site generator (https://gohugo.io/getting-started/installing) which is available for the most popular platforms as a single binary.
 
-## Check the site
+To render the final website use the following command:
 
+```
+hugo -d /destination/dir
+```
 
-## Development
+To develop the site use
 
 ```
 hugo serve
 ```
+
+which starts an internal server where you can always check the final rendered version.
