@@ -15,10 +15,11 @@
 <div class="feature-list-group">
     <div class="container">
         <div class="row header">
-            <h3>What is Apache Ratis?</h3>
+            <h3>What is Apache Ratis&trade;?</h3>
             <p class="lead">
                 Apache Ratis is a higly customizable RAFT protocol implementation in java.
             </p>
+            <p></p>
         </div>
 
         <div class="row feature-list">
@@ -70,7 +71,7 @@
         <div class="row header">
             <h2>Latest news</h2>
             {{ range where .Data.Pages "Section" "post" }}
-            <div class="panel-heading clearfix"><a class="pull-left" href="">{{.Title}}</a>
+            <div class="panel-heading clearfix"><a class="pull-left" href="{{.URL}}">{{.Title}}</a>
                 <small class="pull-right">{{dateFormat "2006 Jan 2 " .Date}}</small>
             </div>
             {{end}}
@@ -125,5 +126,19 @@
         </div>
     </div>
 </div>
+
+<a name="source"></a>
+<div class="main-section">
+    <div class="container">
+        <div class="row header">
+            <p><img src="apache_incubator.png" alt="Apache Incubator"></img></p>
+            <p>Apache Ratis is currently undergoing <a href="https://incubator.apache.org">Incubation</a> at the Apache Software Foundation.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
 
 {{ partial "footer.html" . }}
