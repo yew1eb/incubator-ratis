@@ -11,15 +11,9 @@
  See the License for the specific language governing permissions and
  limitations under the License. See accompanying LICENSE file.
 -->
-
-
-
-
-## Check the site
-
-
-## Development
-
-```
-hugo serve
-```
+{{partial "header.html" .}}
+<div class="container">
+<h1>{{.Title}}</h1>
+{{.Content}}
+</div>
+{{partial "footer.html" .}}

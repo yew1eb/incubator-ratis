@@ -49,4 +49,4 @@ You also need to include *one* of the transports:
     </dependency>
 {{< /highlight >}}
 
-Please not that hadoop dependencies are shaded, so it's safe to use hadoop transport with different versions of hadoop.
+Please note that hadoop dependencies are shaded, so it's safe to use hadoop transport with different versions of hadoop.

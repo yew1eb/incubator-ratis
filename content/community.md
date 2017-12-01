@@ -47,4 +47,5 @@ In order to post to the list, it is necessary to first subscribe to it.
 
 ### Slack
 
-TODO
+There is also a slack instance for discussion at https://apacheratisdev.slack.com.
+Write to the mailing list if you need invite.
