@@ -15,7 +15,9 @@ title: Download
   limitations under the License. See accompanying LICENSE file.
 -->
 
-Ratis is a *library* which is supposed to be used from java code.
+Ratis is a java *library* that can be used directly from your applications. It is an embeddable [RAFT](https://raft.github.io/") protcol library.
+
+To use it from maven, Please use the following configuration.
 
 
 {{< highlight xml>}}

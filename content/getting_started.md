@@ -15,15 +15,15 @@ title: Getting started
   limitations under the License. See accompanying LICENSE file.
 -->
 
-Ratis is a *library* which is expected to be used form java code. It's not a standalone server application like Zookeeper or Consul.
+Ratis is a [RAFT](https://raft.github.io/") protocol *library* in java. It's not a standalone server application like Zookeeper or Consul.
 
-But to demonstrate how to use Ratis from the code, the project providers multiple examples where an example state machine / server log is implemented.
+To demonstrate how to use Ratis from the code, Please look at the following examples.
 
-As of now we have two examples:
+ * [Arithmetic example](https://github.com/apache/incubator-ratis/tree/master/ratis-examples/src/main/java/org/apache/ratis/examples/arithmetic): This is a simple distributed calculator that replicates the values defined and allows user to perform arithmetic operations on these replicated values.
 
- * Arithmetic example: where the Ratis statemachine implementation stores the values of the variables and you can modify the variables arithmetic expressions.
- * FileStore example: where the Ratis statemachine implemetation stores files with a simplified (read/write) interfaces.
+ * [FileStore example](https://github.com/apache/incubator-ratis/tree/master/ratis-examples/src/main/java/org/apache/ratis/examples/filestore): This is an example of using Ratis for reading and writing files.
 
+<!-- TODO: We should have the following as documentation in the github.  -->
 The source code the examples could be found in the ratis-examples subproject.
 
 Arithmetic example also has some simple cli script to start it:

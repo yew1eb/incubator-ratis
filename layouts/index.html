@@ -28,11 +28,10 @@
                 <i class="fa fa-5x fa-fw m-y-3 text-info fa-child"></i>
                 <h4>Pluggable transport</h4>
                 <p>
-                    Transport layer of Ratis is separated from the RAFT implementation and can be used with any
-                    transport.
+                    Ratis provides a pluggable transport layer. By default gRPC, Netty+Protobuf and Hadoop RPC based transports are provided.
                 </p>
                 <p>
-                    By default gRPC, Netty+Protobuf and Hadoop RPC based transports are provided.
+                    
                 </p>
                 <p></p>
             </div>
@@ -40,20 +39,17 @@
                 <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
                 <h4>Pluggable state machine</h4>
                 <p>
-                    Ratis is a RAFT library which can use for many use cases. A custom state machine should be defined
-                    by the
-                    user of the library and Ratis will replicate the state between the servers.
+                    Ratis supports a log and state machine. State machine typically contains the data that you want to make highly avialable. Ratis makes it easy to use your own state machine.
                 </p>
             </div>
             <div class="col-md-4 col-sm-4 feature-item">
                 <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
                 <h4>Pluggable raft log</h4>
-                <p>RAFT log is also pluggable, users may provide their own log implementation. The default
+                <p>RAFT log is also pluggable, users can provide their own log implementation. The default
                     implementation
-                    stores log in local files</p>
+                    stores log in local files.</p>
                 <p>
-                    Application could choose to not written all the data to log and state machine data and log data can
-                    be separately managed
+                    Application can define the polices of how to write data and where it should be written easily.
                 </p>
             </div>
 

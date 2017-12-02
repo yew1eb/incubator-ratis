@@ -19,10 +19,9 @@ title: Community
 
 #### Developers
 
-If you'd like to contribute to Apache Ratis, please subscribe to the
-Ratis developer mailing list.
+If you'd like to contribute to Apache Ratis, please subscribe to the Ratis developer mailing list.
 
-The Rais developer mailing list is: <dev@ratis.incubator.apache.org>.
+The Ratis developer mailing list is: <dev@ratis.incubator.apache.org>.
 
 -   [Subscribe to List](mailto: dev@ratis.incubator.apache.org)
 -   [Unsubscribe from
@@ -37,15 +36,15 @@ questions and discussion.
 
 Please use  dev mailing list to address developers on a specific technical question.
 
-The Ratis user mailing list is : <user@ratis.incubator.apache.org>.
+The Ratis user mailing list is: <user@ratis.incubator.apache.org>.
 
 -   [Subscribe to List](mailto: user-subscribe@ratis.incubator.apache.org)
 -   [Unsubscribe from List](mailto: user-unsubscribe@ratis.incubator.apache.org)
 -   [Archives](http://mail-archives.apache.org/mod_mbox/ratis-user/)
 
-In order to post to the list, it is necessary to first subscribe to it.
+To post to the list, it is necessary to subscribe to it.
 
 ### Slack
 
 There is also a slack instance for discussion at https://apacheratisdev.slack.com.
-Write to the mailing list if you need invite.
+Please write to the mailing list if you need an invite.
