@@ -23,9 +23,8 @@ If you'd like to contribute to Apache Ratis, please subscribe to the Ratis devel
 
 The Ratis developer mailing list is: <dev@ratis.incubator.apache.org>.
 
--   [Subscribe to List](mailto: dev@ratis.incubator.apache.org)
--   [Unsubscribe from
-    List](mailto: dev@ratis.incubator.apache.org)
+-   [Subscribe to List](mailto: dev-subscribe@ratis.incubator.apache.org)
+-   [Unsubscribe from List](mailto: dev-unsubscribe@ratis.incubator.apache.org)
 -   [Archives](http://mail-archives.apache.org/mod_mbox/ratis-dev/)
 
 
