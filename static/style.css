@@ -136,7 +136,7 @@
       color: #777777;
       font-weight: normal;
       line-height: 1.42857143;
-      margin-bottom: 55px; }
+       }
   .feature-list-group .feature-list {
     margin-bottom: 25px; }
   .feature-list-group .feature-item h4 {
@@ -315,4 +315,19 @@ body {
 .main-section h2 {
   padding-bottom: 20px;
   padding-top: 10px;
+}
+
+.whatis h2 {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.whatis P{
+  color: #777777
+}
+
+div .row {
+  padding-left: 30px;
+  padding-right: 30px;
+
 }

@@ -15,7 +15,9 @@ title: Getting started
   limitations under the License. See accompanying LICENSE file.
 -->
 
-Ratis is a [RAFT](https://raft.github.io/") protocol *library* in java. It's not a standalone server application like Zookeeper or Consul.
+Ratis is a [Raft](https://raft.github.io/") protocol *library* in java. It's not a standalone server application like Zookeeper or Consul.
+
+### Examples
 
 To demonstrate how to use Ratis from the code, Please look at the following examples.
 
@@ -34,3 +36,42 @@ Arithmetic example also has some simple cli script to start it:
 4. Create a new variable in the state machine: ``` ./client.sh assign --name a --value 3```
 5. Assign a new variable: ```./client.sh assign --name b --value a+5```
 6. Get a variable from the state machine: ```./client.sh get --name b```
+
+### Maven usage
+
+To use in our project you can access the latest binaries from maven central:
+
+
+{{< highlight xml>}}
+<dependency>
+   <artifactId>ratis-server</artifactId>
+   <groupId>org.apache.ratis</groupId>
+</dependency>
+{{< /highlight >}}
+
+
+You also need to include *one* of the transports:
+
+{{< highlight xml>}}
+<dependency>
+   <artifactId>ratis-netty</artifactId>
+   <groupId>org.apache.ratis</groupId>
+</dependency>
+{{< /highlight >}}
+
+{{< highlight xml>}}
+ <dependency>
+   <groupId>org.apache.ratis</groupId>
+   <artifactId>ratis-grpc</artifactId>
+</dependency>
+{{< /highlight >}}
+
+{{< highlight xml>}}
+    <dependency>
+      <groupId>org.apache.ratis</groupId>
+      <artifactId>ratis-hadoop-shaded</artifactId>
+    </dependency>
+{{< /highlight >}}
+
+Please note that Hadoop dependencies are shaded, so it's safe to use hadoop transport with different versions of Apache Hadoop.
+
