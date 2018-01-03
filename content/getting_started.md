@@ -73,5 +73,5 @@ You also need to include *one* of the transports:
     </dependency>
 {{< /highlight >}}
 
-Please note that Hadoop dependencies are shaded, so it's safe to use hadoop transport with different versions of Apache Hadoop.
+Please note that Apache Hadoop dependencies are shaded, so it's safe to use hadoop transport with different versions of Hadoop.
 
