@@ -15,7 +15,8 @@ title: Source
   limitations under the License. See accompanying LICENSE file.
 -->
 
-Source code is available from the [Apache git](git://git.apache.org/incubator-ratis.git) repository or
-from the [github mirror](https://github.com/apache/incubator-ratis).
+Source code is part of every release, you can download the source bundles from download section and build the project according to the included instructions.
 
-Use the _master_ branch to get the latest development version.
+The versioned source code history is available from the [Apache git](git://git.apache.org/incubator-ratis.git) repository or 
+from the [github mirror](https://github.com/apache/incubator-ratis). It is only for development and not intended for use by the general public. 
+Only the source code from the released artifacts are checked by the Project Management Committee.
