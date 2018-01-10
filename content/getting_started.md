@@ -15,7 +15,7 @@ title: Getting started
   limitations under the License. See accompanying LICENSE file.
 -->
 
-Ratis is a [Raft](https://raft.github.io/") protocol *library* in java. It's not a standalone server application like Zookeeper or Consul.
+Ratis is a [Raft](https://raft.github.io/") protocol *library* in Java. It's not a standalone server application like Zookeeper or Consul.
 
 ### Examples
 
@@ -32,7 +32,8 @@ Arithmetic example also has some simple cli script to start it:
 
 1. First do a full build on the ratis source code: ```mvn clean install -DskipTests```
 2. Go the the bin directory of the examples: ```cd ratis-examples/src/main/bin```
-3. Start three Ratis server (with arithmetic state matchine): ```./start-all```
+3. Start three Ratis server instances (with arithmetic state matchine). ```./start-all``` (This helper script starts 3 
+  Java instances in the background).
 4. Create a new variable in the state machine: ``` ./client.sh assign --name a --value 3```
 5. Assign a new variable: ```./client.sh assign --name b --value a+5```
 6. Get a variable from the state machine: ```./client.sh get --name b```

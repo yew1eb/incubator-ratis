@@ -27,7 +27,7 @@
     <name>Apache Ratis</name>
     <homepage rdf:resource="https://ratis.apache.org" />
     <asfext:pmc rdf:resource="https://ratis.apache.org" />
-    <shortdesc>Apache Ratis is a Raft library in java.</shortdesc>
+    <shortdesc>Apache Ratis is a Raft library in Java.</shortdesc>
     <description>Apache Ratis is a higly customizable RAFT protocol implementation in java supporting pluggable transport, state machine and raft log.</description>
     <bug-database rdf:resource="https://issues.apache.org/jira/browse/RATIS" />
     <mailing-list rdf:resource="htps://ratis.apache.org/#community" />
