@@ -66,14 +66,16 @@ public class Server extends SubCommandBase {
     RaftServerConfigKeys.setStorageDirs(properties, Collections.singletonList(storageDir));
     ConfUtils.setFile(properties::setFile, FileStoreCommon.STATEMACHINE_DIR_KEY,
         storageDir);
+    // 初始化状态机
     StateMachine stateMachine = new FileStoreStateMachine(properties);
-
+    // 初始化 raft group 服务框架
     final RaftGroup raftGroup = RaftGroup.valueOf(RaftGroupId.valueOf(ByteString.copyFromUtf8(raftGroupId)), peers);
     RaftServer raftServer = RaftServer.newBuilder()
         .setServerId(RaftPeerId.valueOf(id))
         .setStateMachine(stateMachine).setProperties(properties)
         .setGroup(raftGroup)
         .build();
+    // 启动
     raftServer.start();
 
     for(; raftServer.getLifeCycleState() != LifeCycle.State.CLOSED;) {
