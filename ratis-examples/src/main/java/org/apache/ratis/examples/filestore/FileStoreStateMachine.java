@@ -78,6 +78,7 @@ public class FileStoreStateMachine extends BaseStateMachine {
 
   @Override
   public CompletableFuture<Message> query(Message request) {
+    //读取文件里面的内容
     final ReadRequestProto proto;
     try {
       proto = ReadRequestProto.parseFrom(request.getContent());
@@ -92,6 +93,7 @@ public class FileStoreStateMachine extends BaseStateMachine {
 
   @Override
   public TransactionContext startTransaction(RaftClientRequest request) throws IOException {
+    //事务操作写入
     final ByteString content = request.getMessage().getContent();
     final FileStoreRequestProto proto = FileStoreRequestProto.parseFrom(content);
     final TransactionContext.Builder b = TransactionContext.newBuilder()
@@ -110,7 +112,7 @@ public class FileStoreStateMachine extends BaseStateMachine {
   }
 
   @Override
-  public CompletableFuture<Integer> writeStateMachineData(LogEntryProto entry) {
+  public CompletableFuture<Integer> writeStateMachineData(LogEntryProto entry) { //Snapshot 的保存
     final StateMachineLogEntryProto smLog = entry.getStateMachineLogEntry();
     final ByteString data = smLog.getLogData();
     final FileStoreRequestProto proto;
@@ -132,7 +134,7 @@ public class FileStoreStateMachine extends BaseStateMachine {
   }
 
   @Override
-  public CompletableFuture<ByteString> readStateMachineData(LogEntryProto entry) {
+  public CompletableFuture<ByteString> readStateMachineData(LogEntryProto entry) { //Snapshot 的读取
     final StateMachineLogEntryProto smLog = entry.getStateMachineLogEntry();
     final ByteString data = smLog.getLogData();
     final FileStoreRequestProto proto;
